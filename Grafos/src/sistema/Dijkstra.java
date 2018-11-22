@@ -17,6 +17,11 @@ public class Dijkstra {
         this.nodos = graph.getVertexes();
         this.aristas = graph.getEdges();
     }
+    public Linked_List caminocorto(Vertice salida,Vertice llegada) {
+    	execute(salida);
+    	return getPath(llegada);
+    	
+    }
 
     public void execute(Vertice source) {
         settledNodes = new HashSet<Vertice>();

@@ -2,7 +2,28 @@ package sistema;
 
 public class Conductor {
 	Linked_List<Conductor> amigos_cond;
+	Linked_List<Estudiante> amigos_est;
+	Vertice posicion;
+	int cant_calif;
+	int suma_calif;
+	float calif_prom=suma_calif/cant_calif;
+	int carne;
 	int cant_viajes;
+
+	
+	
+	public Vertice getPosicion() {
+		return posicion;
+	}
+	public void setPosicion(Vertice posicion) {
+		this.posicion = posicion;
+	}
+	public Linked_List<Estudiante> getAmigos_est() {
+		return amigos_est;
+	}
+	public void setAmigos_est(Linked_List<Estudiante> amigos_est) {
+		this.amigos_est = amigos_est;
+	}
 	public Linked_List<Conductor> getAmigos_cond() {
 		return amigos_cond;
 	}
@@ -39,10 +60,7 @@ public class Conductor {
 	public void setCarne(int carne) {
 		this.carne = carne;
 	}
-	int cant_calif;
-	int suma_calif;
-	float calif_prom=suma_calif/cant_calif;
-	int carne;
+
 	
 
 }
