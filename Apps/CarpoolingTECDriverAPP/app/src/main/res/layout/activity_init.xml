@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".initActivity">
+
+    <TextView
+        android:id="@+id/Bienvenido_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Bienvenido a la APP de carpooling"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/Bienvenido_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Bienvenido_2"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginBottom="144dp"
+        android:text="del Tecnológico de Costa Rica"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bienvenido_1" />
+
+    <Button
+        android:id="@+id/iniciarSesión"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Iniciar Sesión"
+        app:layout_constraintBottom_toTopOf="@+id/registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:text="Registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iniciarSesión" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="268dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="136dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/iniciarSesión"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Bienvenido_1"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+</android.support.constraint.ConstraintLayout>
