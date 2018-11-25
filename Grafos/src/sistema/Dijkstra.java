@@ -22,7 +22,8 @@ public class Dijkstra {
     	return getPath(llegada);
     	
     }
-
+    //Funcion que toma el primer vertice que se desea ingresar para poder cumplir con el algoritmo de camino mas corto
+    
     public void execute(Vertice source) {
         settledNodes = new HashSet<Vertice>();
         unSettledNodes = new HashSet<Vertice>();
@@ -37,7 +38,7 @@ public class Dijkstra {
             findMinimalDistances(node);
         }
     }
-
+    //Funcion que determina el camino mas corto entre distintos destinos
     private void findMinimalDistances(Vertice node) {
         Linked_List<Vertice> adjacentNodes = getNeighbors(node);
      
@@ -53,7 +54,7 @@ public class Dijkstra {
         }
 
     }
-
+    //Funcion que determina la distancia entre los dos vertices ingresados
     public int getDistance(Vertice node, Vertice target) {
         for (int i=0; i<aristas.getLenght(); i++) {
         	Arista edge=aristas.getNode(i).getData();
@@ -64,7 +65,7 @@ public class Dijkstra {
         }
         throw new RuntimeException("Should not happen");
     }
-
+    //Funcion que determina cuales son los vertices adyacentes al vertice ingresado
     private Linked_List<Vertice> getNeighbors(Vertice node) {
     	Linked_List<Vertice> neighbors = new Linked_List<Vertice>();
         for (int i=0; i<aristas.getLenght(); i++) {
@@ -76,7 +77,7 @@ public class Dijkstra {
         }
         return neighbors;
     }
-
+    //Funcion que determina el 
     private Vertice getMinimum(Set<Vertice> vertexes) {
     	Vertice minimum = null;
         for (Vertice vertex : vertexes) {
@@ -104,10 +105,7 @@ public class Dijkstra {
         }
     }
 
-    /*
-     * This method returns the path from the source to the selected target and
-     * NULL if no path exists
-     */
+    //Funcion que retorna la lista con los vertices totales que se recorren para llegar al destino
     public Linked_List<Vertice> getPath(Vertice target) {
         Linked_List<Vertice> path = new Linked_List<Vertice>();
         Vertice step = target;
@@ -120,17 +118,23 @@ public class Dijkstra {
             step = predecessors.get(step);
             path.append(step);
         }
-        // Put it into the correct order
+        // Pone la lista en el orden correcto
         path=path.reverse(path);
         return path;
     }
+    //Funcion que determina la distancia total recorrida por
     public int DistanciaTotal(Linked_List<Vertice> lista,Dijkstra dijkstra) {
 		int distancia = 0;
-
+		
     	for (int i=0; i<lista.getLenght()-1; i++) {
+    		if("".equals(lista.getNode(i+1).getData().getid())) {
+    		i=i+2;
+    		}else {
 			distancia+=dijkstra.getDistance(lista.getNode(i).getData(),lista.getNode(i+1).getData());
+    	}
     	}
     	return distancia;
     	
     }
 }
+    

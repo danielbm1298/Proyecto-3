@@ -1,30 +1,36 @@
 package sistema;
 
 public class Estudiante {
-	Linked_List amigos_conduc;
-	Linked_List amigos_estudiant;
-	int cant_calif;
+	Linked_List<Conductor> amigos_conduc;
+	String nombre;
+
+	int cant_calif=1;
 	int suma_calif;
-	float calif_prom=suma_calif/cant_calif;
+	float calif_prom;
 	int carne;
 	Vertice posicion;
+	public Estudiante(String nombre,int carne,Vertice posicion) {
+		this.nombre=nombre;
+		this.carne=carne;
+		this.posicion=posicion;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
 	public Vertice getPosicion() {
 		return posicion;
 	}
 	public void setPosicion(Vertice posicion) {
 		this.posicion = posicion;
 	}
-	public Linked_List getAmigos_conduc() {
+	public Linked_List<Conductor> getAmigos_conduc() {
 		return amigos_conduc;
 	}
 	public void setAmigos_conduc(Linked_List amigos_conduc) {
 		this.amigos_conduc = amigos_conduc;
-	}
-	public Linked_List getAmigos_estudiant() {
-		return amigos_estudiant;
-	}
-	public void setAmigos_estudiant(Linked_List amigos_estudiant) {
-		this.amigos_estudiant = amigos_estudiant;
 	}
 	public int getCant_calif() {
 		return cant_calif;

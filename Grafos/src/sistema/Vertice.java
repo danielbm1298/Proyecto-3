@@ -2,7 +2,7 @@ package sistema;
 
 public class Vertice {
     final private String id;
-    final private String nombre;
+     private String nombre;
 
 
     public Vertice(String id, String name) {
@@ -11,6 +11,10 @@ public class Vertice {
     }
     public String getid() {
         return id;
+    }
+    public void SetName(String nombre) {
+    	this.nombre=nombre;
+    	
     }
 
     public String getname() {

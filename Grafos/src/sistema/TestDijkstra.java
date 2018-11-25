@@ -1,5 +1,8 @@
 package sistema;
 import java.util.Random;
+
+import jdk.management.resource.internal.inst.SocketOutputStreamRMHooks;
+import jdk.nashorn.internal.codegen.types.Type;
 public class TestDijkstra {
 	
 	    private Linked_List<Vertice> nodes;
@@ -9,65 +12,65 @@ public class TestDijkstra {
 	    	Random generador = new Random();
 	        nodes = new Linked_List<Vertice>();
 	        edges = new Linked_List<Arista>();
-	        Vertice Vidriera = new Vertice("1","Vidriera");
+	        Vertice Vidriera = new Vertice("_1","Vidriera");
 	        nodes.append(Vidriera);
-	        Vertice Puente = new Vertice("2","Puente de Taras");
+	        Vertice Puente = new Vertice("_2","Puente de Taras");
 	        nodes.append(Puente);
-	        Vertice Taras = new Vertice("3","Taras");
+	        Vertice Taras = new Vertice("_3","Taras");
 	        nodes.append(Taras);
-	        Vertice Metrocentro = new Vertice("4","Metrocentro");
+	        Vertice Metrocentro = new Vertice("_4","Metrocentro");
 	        nodes.append(Metrocentro);
-	        Vertice Cementerio = new Vertice("5","Cementerio");
+	        Vertice Cementerio = new Vertice("_5","Cementerio");
 	        nodes.append(Cementerio);
-	        Vertice Padres = new Vertice("6","Padres Salesianos");
+	        Vertice Padres = new Vertice("_6","Padres Salesianos");
 	        nodes.append(Padres);
-	        Vertice Figueres = new Vertice("7","Figueres");
+	        Vertice Figueres = new Vertice("_7","Figueres");
 	        nodes.append(Figueres);
-	        Vertice Fatima = new Vertice("8","Fatima");
+	        Vertice Fatima = new Vertice("_8","Fatima");
 	        nodes.append(Fatima);
-	        Vertice Mercado = new Vertice("9","Mercado");
+	        Vertice Mercado = new Vertice("_9","Mercado");
 	        nodes.append(Mercado);
-	        Vertice Jasec = new Vertice("10","Jasec");
+	        Vertice Jasec = new Vertice("_10","Jasec");
 	        nodes.append(Jasec);
-	        Vertice Ferreteria = new Vertice("11","Ferreteria");
+	        Vertice Ferreteria = new Vertice("_11","Ferreteria");
 	        nodes.append(Ferreteria);
-	        Vertice Biblioteca = new Vertice("12","Biblioteca");
+	        Vertice Biblioteca = new Vertice("_12","Biblioteca");
 	        nodes.append(Biblioteca);
-	        Vertice SanLuis = new Vertice("13","San Luis");
+	        Vertice SanLuis = new Vertice("_13","San Luis");
 	        nodes.append(SanLuis);
-	        Vertice MOPT = new Vertice("14","MOPT");
+	        Vertice MOPT = new Vertice("_14","MOPT");
 	        nodes.append(MOPT);
-	        Vertice IMAS = new Vertice("15","IMAS");
+	        Vertice IMAS = new Vertice("_15","IMAS");
 	        nodes.append(IMAS);
-	        Vertice ICE = new Vertice("16","ICE");
+	        Vertice ICE = new Vertice("_16","ICE");
 	        nodes.append(ICE);
-	        Vertice Ruinas = new Vertice("17","Ruinas");
+	        Vertice Ruinas = new Vertice("_17","Ruinas");
 	        nodes.append(Ruinas);
-	        Vertice Estadio = new Vertice("18","Estadio");
+	        Vertice Estadio = new Vertice("_18","Estadio");
 	        nodes.append(Estadio);
-	        Vertice Carmen = new Vertice("19","El Carmen");
+	        Vertice Carmen = new Vertice("_19","El Carmen");
 	        nodes.append(Carmen);
-	        Vertice Mini = new Vertice("20","Mini super");
+	        Vertice Mini = new Vertice("_20","Mini super");
 	        nodes.append(Mini);
-	        Vertice Farmacia = new Vertice("21","Farmacia");
+	        Vertice Farmacia = new Vertice("_21","Farmacia");
 	        nodes.append(Farmacia);
-	        Vertice Banco = new Vertice("22","Banco");
+	        Vertice Banco = new Vertice("_22","Banco");
 	        nodes.append(Banco);
-	        Vertice Tribunales = new Vertice("23","Tribunales");
+	        Vertice Tribunales = new Vertice("_23","Tribunales");
 	        nodes.append(Tribunales);
-	        Vertice Sony = new Vertice("24","Sony");
+	        Vertice Sony = new Vertice("_24","Sony");
 	        nodes.append(Sony);
-	        Vertice SanRafael = new Vertice("25","San Rafael");
+	        Vertice SanRafael = new Vertice("_25","San Rafael");
 	        nodes.append(SanRafael);
-	        Vertice Pali = new Vertice("26","Pali");
+	        Vertice Pali = new Vertice("_26","Pali");
 	        nodes.append(Pali);
-	        Vertice Angeles = new Vertice("27","Los Angeles");
+	        Vertice Angeles = new Vertice("_27","Los Angeles");
 	        nodes.append(Angeles);
-	        Vertice Twins = new Vertice("28","Twins");
+	        Vertice Twins = new Vertice("_28","Twins");
 	        nodes.append(Twins);
-	        Vertice Residecias = new Vertice("29","Residecias");
+	        Vertice Residecias = new Vertice("_29","Residecias");
 	        nodes.append(Residecias);
-	        Vertice TEC = new Vertice("30","TEC");
+	        Vertice TEC = new Vertice("_30","TEC");
 	        nodes.append(TEC);
 
 	        //Conexiones
@@ -167,52 +170,195 @@ public class TestDijkstra {
 	        addLane("Edge_93", 28, 10, generador.nextInt(10));
 	        addLane("Edge_94", 28, 10, generador.nextInt(10));
 	        addLane("Edge_95", 28, 10, generador.nextInt(10));
+	        //Lista Conductores
+	        
+	        Conductor JuanCon=new Conductor("Juan",201864475,7,nodes.getNode(21).getData());     
+	        Conductor DanielCon=new Conductor("Daniel",2018227475,12,nodes.getNode(7).getData());
+	        Conductor PedroCon=new Conductor("Pedro",201848793,5,nodes.getNode(9).getData());
+	        Conductor ArmandoCon=new Conductor("Armando",201878127,2,nodes.getNode(14).getData());
+	        Conductor MelissaCon=new Conductor("Melissa",201878934,16,nodes.getNode(24).getData());
+	        Conductor HugoCon=new Conductor("Hugo",201789314,16,nodes.getNode(9).getData());
+	        Conductor IanCon=new Conductor("Ian",201842301,20,nodes.getNode(7).getData());
+	        Conductor FranciscoCon=new Conductor("Francisco",201879830,5,nodes.getNode(5).getData());
+	        Conductor BrandonCon=new Conductor("Brandon",201876824,8,nodes.getNode(18).getData());
+	        Conductor JenniferCon=new Conductor("Jennifer",201878935,14,nodes.getNode(23).getData());
+	        Linked_List<Conductor> conductores= new Linked_List();
 
-	        // Lets check from location Loc_1 to Loc_10
+	        conductores.append(JuanCon);
+	        conductores.append(DanielCon);
+	        conductores.append(PedroCon);
+	        conductores.append(ArmandoCon);
+	        conductores.append(MelissaCon);
+	        conductores.append(HugoCon);
+	        conductores.append(IanCon);
+	        conductores.append(FranciscoCon);
+	        conductores.append(BrandonCon);
+	        conductores.append(JenniferCon);
+	        
+	        conductores=top5(conductores);
+	        
+	        //Lista Estudiantes
+	        Estudiante Oscar=new Estudiante("Oscar", 201899546, nodes.getNode(28).getData());
+	        Estudiante Armando=new Estudiante("Armando", 201848763, nodes.getNode(27).getData());
+	        Estudiante Manuel=new Estudiante("Manuel", 201897894, nodes.getNode(17).getData());
+	        Estudiante Cristan=new Estudiante("Cristian", 201875345, nodes.getNode(15).getData());
+	        Linked_List<Estudiante> estudiantes=new Linked_List();
+	        estudiantes.append(Oscar);
+	        estudiantes.append(Armando);
+	        estudiantes.append(Manuel);
+	        estudiantes.append(Cristan);
+
+	       
+	        // Pruebas
 	        Grafo graph = new Grafo(nodes, edges);
 	        Dijkstra dijkstra = new Dijkstra(graph);
 	        
 	        Linked_List listaamigos=new Linked_List();
-	        Estudiante est1=new Estudiante();
-	        est1.setPosicion(nodes.getNode(17).getData());
-	        listaamigos.append(est1);
-	        Conductor conductor1=new Conductor();
-	        conductor1.setAmigos_est(listaamigos);
-	        conductor1.setPosicion(nodes.getNode(0).getData());
-	        Linked_List<Vertice> path=pasarp_amigo(conductor1,dijkstra);
+	        Estudiante Andrey=new Estudiante("Andrey",201759634,nodes.getNode(15).getData());
+	        listaamigos.append(JuanCon);
+	        Conductor conductor1=new Conductor("Hector",201864475,7,nodes.getNode(21).getData());
+	        Andrey.setAmigos_conduc(listaamigos);
+	        conductor1.setPosicion(nodes.getNode(21).getData());
+	        Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
+	        //Pruebas top 5
+
+
 	        
-	     
+
 	        
+	        //conductores.QuickSort(conductores, 0, conductores.getLenght()-1);
+	        //Imprime el top 5
+	        System.out.println("el top 5 de conductores es");
+	        for (int i=0;i<4;i++) {
+	        	
+	        	System.out.println(conductores.getNode(i).getData().getNom()+" con "+conductores.getNode(i).getData().getCant_viajes()+" viajes");
+	        }   
 	        
 	        int distotal=dijkstra.DistanciaTotal(path, dijkstra);
 	        //int distotal=dijkstra.getDistance(path.getNode(1).getData(), path.getNode(2).getData());
 	        System.out.println(distotal);
 
 	        for (int i=0; i<path.getLenght(); i++) {
-	        	Vertice vertex=path.getNode(i).getData();
-	            System.out.println(vertex);
+	        	String tipo=path.getNode(i).getData().getClass().getSimpleName();
+	        	if ("Vertice".equals(tipo)) {
+		        	String vertex=path.getNode(i).getData().getname();
+		            System.out.println(vertex);
+	        	}else {
+	        		System.out.println("pasa por");
+
+	        	}
 	        }
-
-
-
-
+	        
+	        
 	    }
-
 	    private void addLane(String laneId, int sourceLocNo, int destLocNo,
 	            int duration) {
 	        Arista lane = new Arista(laneId,nodes.getNode(sourceLocNo).getData(), nodes.getNode(destLocNo).getData(), duration );
 	        edges.append(lane);
 	    }
-	    public Linked_List<Vertice> pasarp_amigo(Conductor conduc,Dijkstra dijkstra) {
+	    //FUNCIONES DE CARPOOLING PARA CONDUCTOR    
+	    //Funcion que permite que un conductor pase por un amigo AA
+	    public Linked_List<Vertice> cond_pasarp_amigo(Conductor conduc,Dijkstra dijkstra) {
 	    	Estudiante estudiante=conduc.getAmigos_est().getNode(0).getData();
 	    	Vertice pos=estudiante.getPosicion();
 	    	Linked_List camino1=dijkstra.caminocorto(conduc.getPosicion(),pos);
-	    	Linked_List camino2=dijkstra.caminocorto(pos,nodes.getNode(29).getData());
-	    	for (int i=0;i<=camino2.getLenght();i++) {
+	    	Vertice amigo= new Vertice("","");
+	    	amigo.SetName("Pasa por "+estudiante.getNombre());
+	    	camino1.append(amigo);
+	    	Linked_List<Vertice> camino2=dijkstra.caminocorto(pos,nodes.getNode(29).getData());
+	    	for (int i=1;i<camino2.getLenght();i++) {
 	    		camino1.append(camino2.getNode(i).getData());
 	    	}
 	    	return camino1;
 	    }
+	    //Funcion que le permite a un conductor hacer un viaje sin desvios y recoger a un estudiante AA
+	    public Linked_List<Vertice> sin_desv(Conductor conduc,Linked_List<Estudiante> est_totales,Dijkstra dijkstra){
+	    	Linked_List camino=dijkstra.caminocorto(conduc.getPosicion(),nodes.getNode(29).getData());
+	    	for (int i=0;i<camino.getLenght();i++) {
+	    		for(int j=0;j<est_totales.getLenght();j++) {
+	    			if (camino.getNode(i).getData()==est_totales.getNode(j).getData().getPosicion()) {
+	    				Vertice pasa =new Vertice("","");
+	    				pasa.SetName("Pasando por "+est_totales.getNode(j).getData().getNombre());
+	    				camino.append(pasa);
+
+	    			}
+	    		}
+	    	}
+	    	return camino;
+	    	
+	    }
+	    //FUNCIONES DE CARPOOLING PARA ESTUDIANTE
+	    //Funcion que permite que un amigo de un estudiante pase por el AA
+	    public Linked_List<Vertice> est_pasarp_amigo(Estudiante estudiant,Dijkstra dijkstra) {
+	    	Conductor conductor=estudiant.getAmigos_conduc().getNode(0).getData();
+	    	Vertice pos=conductor.getPosicion();
+	    	Linked_List camino1=dijkstra.caminocorto(pos,estudiant.getPosicion());
+	    	Vertice amigo= new Vertice("","");
+	    	amigo.SetName("Te recoge "+estudiant.getNombre());
+	    	camino1.append(amigo);
+	    	Linked_List<Vertice> camino2=dijkstra.caminocorto(estudiant.getPosicion(),nodes.getNode(29).getData());
+	    	for (int i=1;i<camino2.getLenght();i++) {
+	    		camino1.append(camino2.getNode(i).getData());
+	    	}
+	    	camino1=choque(camino1);
+	    	return camino1;
+	    }
+	    
+	    
+	    
+	    public Linked_List<Conductor> top5(Linked_List<Conductor> lista){
+	    	lista.QuickSort(lista,0, lista.getLenght()-1);
+	    	lista=lista.reverse(lista);
+	    	Linked_List<Conductor> lista2= new Linked_List<Conductor>();
+	    	for (int i=0;i<5;i++){
+	    		lista2.append(lista.getNode(i).getData());
+	    	}
+	    	return lista2;
+	    	
+	    	
+	    }
+	    public void agregar_amigo(Conductor conduc,int carne,Linked_List<Conductor> conductores) {
+	    	for (int i=0;i>conductores.getLenght()-1;i++) {
+	    		if (conductores.getNode(i).getData().getCarne()==carne) {
+	    			conduc.getAmigos_cond().append(conductores.getNode(i).getData());
+	    			conduc.setAmigos_cond(conduc.getAmigos_cond());
+	    			return;
+	    			
+	    			
+	    		}
+	    	}
+	    }
+	    public Linked_List<Vertice> choque(Linked_List<Vertice> lista) {
+	    	System.out.println("entro");
+	    	Random generador = new Random();
+	    	int numero=generador.nextInt(2);
+    		Linked_List<Vertice> lista2=new Linked_List();
+
+
+	    	if (numero==1) {
+	    		System.out.println("choco");
+	    	//lista=lista.reverse(lista);
+	    	for(int i=0;i<lista.getLenght();i++) {
+	    		if (i==lista.getLenght()-3) {
+	    	    	System.out.println("si llega al penul");
+
+	    			Vertice choque=new Vertice("","");
+	    			choque.SetName("Hay un choque cercade "+lista.getNode(lista.getLenght()-3).getData().getname()+" ,se redirecciona la ruta");
+	    			lista2.append(choque);
+	    			lista2.append(lista.getNode(i+1).getData());
+	    			i++;
+	    		}else {
+	    	lista2.append(lista.getNode(i).getData());;
+	    
+	    	}
+	    	}
+	    	System.out.println(lista2.getLenght());
+	    	return lista2;
+	    }else {
+			return lista;
+	    }
+	    }
+	    
 	
 	public static void main(String args[]) {
 		TestDijkstra prueb=new TestDijkstra();

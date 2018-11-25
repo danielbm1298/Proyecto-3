@@ -4,13 +4,25 @@ public class Conductor {
 	Linked_List<Conductor> amigos_cond;
 	Linked_List<Estudiante> amigos_est;
 	Vertice posicion;
+	String nom;
 	int cant_calif;
-	int suma_calif;
-	float calif_prom=suma_calif/cant_calif;
+	int suma_calif=1;
+	float calif_prom;
 	int carne;
 	int cant_viajes;
-
 	
+	public Conductor(String nom,int carne,int cant_vaijes,Vertice posicion) {
+		this.nom=nom;
+		this.carne=carne;
+		this.posicion=posicion;
+		this.cant_viajes=cant_vaijes;
+		
+	}
+	
+	public void calificar(int calif) {
+		this.suma_calif=suma_calif+calif;
+		this.cant_calif=cant_calif+1;
+	}
 	
 	public Vertice getPosicion() {
 		return posicion;
@@ -59,6 +71,12 @@ public class Conductor {
 	}
 	public void setCarne(int carne) {
 		this.carne = carne;
+	}
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
 	}
 
 	

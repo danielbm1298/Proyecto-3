@@ -1,5 +1,6 @@
 package sistema;
 
+
 public class Linked_List<T> {
 private Node<T> root;
 private int lenght = 0;
@@ -127,8 +128,8 @@ public boolean contains(Linked_List conex, Linked_List listaconex) {
             
             
         }
-        public Linked_List<Vertice> reverse(Linked_List<Vertice> lista) {
-        	Linked_List<Vertice> lista2=new Linked_List();
+        public Linked_List reverse(Linked_List lista) {
+        	Linked_List lista2=new Linked_List();
         	for (int i=lista.getLenght()-1; i>=0; i--) {
         		lista2.append(lista.getNode(i).getData());
         		
@@ -136,4 +137,66 @@ public boolean contains(Linked_List conex, Linked_List listaconex) {
         	return lista2;
         	
         }
+        public void QuickSort(Linked_List<Conductor> arr, int low, int high) 
+        { 
+        if (low < high) 
+        { 
+            /* pi is partitioning index, arr[pi] is  
+              now at right place */
+            int pi = partition(arr, low, high); 
+  
+            // Recursively sort elements before 
+            // partition and after partition 
+            QuickSort(arr, low, pi-1); 
+            QuickSort(arr, pi+1, high); 
+        } 
+    }
+        int partition(Linked_List<Conductor> arr, int low, int high) 
+        { 
+            int pivot = arr.getNode(high).getData().getCant_viajes();  
+            int i = (low-1); // index of smaller element 
+            for (int j=low; j<high; j++) 
+            { 
+                // If current element is smaller than or 
+                // equal to pivot 
+                if (arr.getNode(j).getData().getCant_viajes() <= pivot) 
+                { 
+                    i++; 
+      
+                    // swap arr[i] and arr[j] 
+                    switchCond(arr, i, j);
+                } 
+            } 
+      
+            // swap arr[i+1] and arr[high] (or pivot) 
+            switchCond(arr, i+1, high);
+            
+      
+            return i+1; 
+        }
+public Linked_List<Conductor> switchCond(Linked_List<Conductor> lista,int a,int b) {
+            
+            Conductor conduc1 = lista.getNode(a).getData();
+            Conductor conduc2 = lista.getNode(b).getData();
+            Vertice vert=new Vertice("a","b");
+            Conductor temp = new Conductor("Juan",1,201864475,vert);
+            temp.setNom(conduc1.getNom());
+            temp.setCant_viajes(conduc1.getCant_viajes());
+            
+           
+            
+            
+            lista.append(temp);
+                                 
+            conduc1.setNom(conduc2.getNom());
+            conduc1.setCant_viajes(conduc2.getCant_viajes());
+            
+            conduc2.setNom(temp.getNom());
+            conduc2.setCant_viajes(temp.getCant_viajes());
+            
+            lista.delete(lista.getLenght()-1);
+
+            return lista;
+        } 
+        
 }
