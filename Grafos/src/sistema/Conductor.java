@@ -10,7 +10,7 @@ public class Conductor {
 	float calif_prom;
 	int carne;
 	int cant_viajes;
-	
+//Constructor de la clase conductor	
 	public Conductor(String nom,int carne,int cant_vaijes,Vertice posicion) {
 		this.nom=nom;
 		this.carne=carne;
@@ -18,12 +18,12 @@ public class Conductor {
 		this.cant_viajes=cant_vaijes;
 		
 	}
-	
+//Funcion de calificar que le aumenta en uno cada vez que se realiza al total de calificaciones y le suma al total de estrellas otorgadas 
 	public void calificar(int calif) {
 		this.suma_calif=suma_calif+calif;
 		this.cant_calif=cant_calif+1;
 	}
-	
+//Getter y Setters	
 	public Vertice getPosicion() {
 		return posicion;
 	}

@@ -9,6 +9,7 @@ public class TestDijkstra {
 	    	Random generador = new Random();
 	        nodes = new Linked_List<Vertice>();
 	        edges = new Linked_List<Arista>();
+// Lista de los vertices representados con un nombre en el mapa
 	        Vertice Vidriera = new Vertice("_1","Vidriera");
 	        nodes.append(Vidriera);
 	        Vertice Puente = new Vertice("_2","Puente de Taras");
@@ -70,7 +71,7 @@ public class TestDijkstra {
 	        Vertice TEC = new Vertice("_30","TEC");
 	        nodes.append(TEC);
 
-	        //Conexiones
+	        // lista de las conexiones o aristas entre cada vertice que esta en el mapa
 	        addLane("Edge_0", 0, 1, generador.nextInt(10));
 	        addLane("Edge_1", 0, 6, generador.nextInt(10));
 	        addLane("Edge_2", 1, 0, generador.nextInt(10));
@@ -167,7 +168,8 @@ public class TestDijkstra {
 	        addLane("Edge_93", 28, 10, generador.nextInt(10));
 	        addLane("Edge_94", 28, 10, generador.nextInt(10));
 	        addLane("Edge_95", 28, 10, generador.nextInt(10));
-	        //Lista Conductores
+		    
+	        //se crean conductores para prueba 
 	        
 	        Conductor JuanCon=new Conductor("Juan",201864475,7,nodes.getNode(21).getData());     
 	        Conductor DanielCon=new Conductor("Daniel",2018227475,12,nodes.getNode(7).getData());
@@ -180,7 +182,7 @@ public class TestDijkstra {
 	        Conductor BrandonCon=new Conductor("Brandon",201876824,8,nodes.getNode(18).getData());
 	        Conductor JenniferCon=new Conductor("Jennifer",201878935,14,nodes.getNode(23).getData());
 	        Linked_List<Conductor> conductores= new Linked_List();
-
+		//Se agrega cada uno a la lista de conductores
 	        conductores.append(JuanCon);
 	        conductores.append(DanielCon);
 	        conductores.append(PedroCon);
@@ -192,9 +194,11 @@ public class TestDijkstra {
 	        conductores.append(BrandonCon);
 	        conductores.append(JenniferCon);
 	        
-	        conductores=top5(conductores);
+		// Con la funcion top 5 la lista ahora tiene los 5 conductores con mas viajes
+	        topconductores=top5(conductores);
 	        
 	        //Lista Estudiantes
+		
 	        Estudiante Oscar=new Estudiante("Oscar", 201899546, nodes.getNode(28).getData());
 	        Estudiante Armando=new Estudiante("Armando", 201848763, nodes.getNode(27).getData());
 	        Estudiante Manuel=new Estudiante("Manuel", 201897894, nodes.getNode(17).getData());
@@ -216,7 +220,15 @@ public class TestDijkstra {
 	        Conductor conductor1=new Conductor("Hector",201864475,7,nodes.getNode(21).getData());
 	        Andrey.setAmigos_conduc(listaamigos);
 	        conductor1.setPosicion(nodes.getNode(21).getData());
-	        Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
+		    
+		    
+	// AQUI SE PRUEBAN LAS 4 OPCIONES DE CARPOOLING
+		//Conductor ************************************************************
+	        //Linked_List<Vertice> path=est_pasarp_amigo(conductor1, dijkstra);
+		//Linked_List<Vertice> path=sin_desv(conductor1,estudiantes, dijkstra);
+		//Estudiante**********************************************************
+		//Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
+		Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
 	        //Pruebas top 5
 
 
@@ -228,12 +240,12 @@ public class TestDijkstra {
 	        System.out.println("el top 5 de conductores es");
 	        for (int i=0;i<4;i++) {
 	        	
-	        	System.out.println(conductores.getNode(i).getData().getNom()+" con "+conductores.getNode(i).getData().getCant_viajes()+" viajes");
+	        	System.out.println(topconductores.getNode(i).getData().getNom()+" con "+topconductores.getNode(i).getData().getCant_viajes()+" viajes");
 	        }   
 	        
 	        int distotal=dijkstra.DistanciaTotal(path, dijkstra);
 	        //int distotal=dijkstra.getDistance(path.getNode(1).getData(), path.getNode(2).getData());
-	        System.out.println(distotal);
+	        System.out.println("El tiempo estimado del viaje es de "+distotal);
 
 	        for (int i=0; i<path.getLenght(); i++) {
 	        	String tipo=path.getNode(i).getData().getClass().getSimpleName();
@@ -300,9 +312,17 @@ public class TestDijkstra {
 	    	camino1=choque(camino1);
 	    	return camino1;
 	    }
+	//Funcion que permite que un estudiante le pida a cualquier conductor que pase por el
+	    public Linked_List<Vertice> est_cualq(Estudiante estudiant,Linked_List<Conductor> cond_totales,Dijkstra dijkstra){
+		    Conductor conductor=cond_totales.getNode(1).getData;
+		    Linked_List camino=dijkstra.caminocorto(conductor.getPosicion(),nodes.getNode(29).getData());
+		    Vertice amigo= new Vertice("","");
+		    amigo.SetName(conductor.getNom()+"Te paso a recoger");
+		    camino.append(amigo);
+		    return camino;
+	    }
 	    
-	    
-	    
+	    // Funcion que se le ingresa una lista con conductores y retorna que otra lista con los 5 mejores conductores ordenados de mayor a menor
 	    public Linked_List<Conductor> top5(Linked_List<Conductor> lista){
 	    	lista.QuickSort(lista,0, lista.getLenght()-1);
 	    	lista=lista.reverse(lista);
@@ -314,6 +334,7 @@ public class TestDijkstra {
 	    	
 	    	
 	    }
+	//Funcion que mermite agregar a un amigo nuevo 
 	    public void agregar_amigo(Conductor conduc,int carne,Linked_List<Conductor> conductores) {
 	    	for (int i=0;i>conductores.getLenght()-1;i++) {
 	    		if (conductores.getNode(i).getData().getCarne()==carne) {
