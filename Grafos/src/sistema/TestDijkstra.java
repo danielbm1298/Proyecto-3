@@ -222,7 +222,15 @@ public class TestDijkstra {
 	        Conductor conductor1=new Conductor("Hector",201864475,7,nodes.getNode(21).getData());
 	        Andrey.setAmigos_conduc(listaamigos);
 	        conductor1.setPosicion(nodes.getNode(21).getData());
-	        Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
+		    
+		    
+	// AQUI SE PRUEBAN LAS 4 OPCIONES DE CARPOOLING
+		//Conductor ************************************************************
+	        //Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
+		//Linked_List<Vertice> path=sin_desv(Andrey,estudiantes, dijkstra);
+		//Estudiante**********************************************************
+		//Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
+		Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
 	        //Pruebas top 5
 
 
@@ -239,7 +247,7 @@ public class TestDijkstra {
 	        
 	        int distotal=dijkstra.DistanciaTotal(path, dijkstra);
 	        //int distotal=dijkstra.getDistance(path.getNode(1).getData(), path.getNode(2).getData());
-	        System.out.println(distotal);
+	        System.out.println("El tiempo estimado del viaje es de "+distotal);
 
 	        for (int i=0; i<path.getLenght(); i++) {
 	        	String tipo=path.getNode(i).getData().getClass().getSimpleName();
@@ -306,9 +314,17 @@ public class TestDijkstra {
 	    	camino1=choque(camino1);
 	    	return camino1;
 	    }
+	//Funcion que permite que un estudiante le pida a cualquier conductor que pase por el
+	    public Linked_List<Vertice> est_cualq(Estudiante estudiant,Linked_List<Conductor> cond_totales,Dijkstra dijkstra){
+		    Conductor conductor=cond_totales.getNode(1).getData;
+		    Linked_List camino=dijkstra.caminocorto(conductor.getPosicion(),nodes.getNode(29).getData());
+		    Vertice amigo= new Vertice("","");
+		    amigo.SetName(conductor.getNom()+"Te paso a recoger");
+		    camino.append(amigo);
+		    return camino;
+	    }
 	    
-	    
-	    
+	    // Funcion que se le ingresa una lista con conductores y retorna que otra lista con los 5 mejores conductores ordenados de mayor a menor
 	    public Linked_List<Conductor> top5(Linked_List<Conductor> lista){
 	    	lista.QuickSort(lista,0, lista.getLenght()-1);
 	    	lista=lista.reverse(lista);
@@ -320,6 +336,7 @@ public class TestDijkstra {
 	    	
 	    	
 	    }
+	//Funcion que mermite agregar a un amigo nuevo 
 	    public void agregar_amigo(Conductor conduc,int carne,Linked_List<Conductor> conductores) {
 	    	for (int i=0;i>conductores.getLenght()-1;i++) {
 	    		if (conductores.getNode(i).getData().getCarne()==carne) {
