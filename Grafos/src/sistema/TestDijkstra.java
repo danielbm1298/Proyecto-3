@@ -12,6 +12,7 @@ public class TestDijkstra {
 	    	Random generador = new Random();
 	        nodes = new Linked_List<Vertice>();
 	        edges = new Linked_List<Arista>();
+// Lista de los vertices representados con un nombre en el mapa
 	        Vertice Vidriera = new Vertice("_1","Vidriera");
 	        nodes.append(Vidriera);
 	        Vertice Puente = new Vertice("_2","Puente de Taras");
@@ -73,7 +74,7 @@ public class TestDijkstra {
 	        Vertice TEC = new Vertice("_30","TEC");
 	        nodes.append(TEC);
 
-	        //Conexiones
+	        // lista de las conexiones o aristas entre cada vertice que esta en el mapa
 	        addLane("Edge_0", 0, 1, generador.nextInt(10));
 	        addLane("Edge_1", 0, 6, generador.nextInt(10));
 	        addLane("Edge_2", 1, 0, generador.nextInt(10));
@@ -170,7 +171,8 @@ public class TestDijkstra {
 	        addLane("Edge_93", 28, 10, generador.nextInt(10));
 	        addLane("Edge_94", 28, 10, generador.nextInt(10));
 	        addLane("Edge_95", 28, 10, generador.nextInt(10));
-	        //Lista Conductores
+		    
+	        //se crean conductores para prueba 
 	        
 	        Conductor JuanCon=new Conductor("Juan",201864475,7,nodes.getNode(21).getData());     
 	        Conductor DanielCon=new Conductor("Daniel",2018227475,12,nodes.getNode(7).getData());
@@ -183,7 +185,7 @@ public class TestDijkstra {
 	        Conductor BrandonCon=new Conductor("Brandon",201876824,8,nodes.getNode(18).getData());
 	        Conductor JenniferCon=new Conductor("Jennifer",201878935,14,nodes.getNode(23).getData());
 	        Linked_List<Conductor> conductores= new Linked_List();
-
+		//Se agrega cada uno a la lista de conductores
 	        conductores.append(JuanCon);
 	        conductores.append(DanielCon);
 	        conductores.append(PedroCon);
@@ -195,7 +197,8 @@ public class TestDijkstra {
 	        conductores.append(BrandonCon);
 	        conductores.append(JenniferCon);
 	        
-	        conductores=top5(conductores);
+		// Con la funcion top 5 la lista ahora tiene los 5 conductores con mas viajes
+	        topconductores=top5(conductores);
 	        
 	        //Lista Estudiantes
 	        Estudiante Oscar=new Estudiante("Oscar", 201899546, nodes.getNode(28).getData());
@@ -231,7 +234,7 @@ public class TestDijkstra {
 	        System.out.println("el top 5 de conductores es");
 	        for (int i=0;i<4;i++) {
 	        	
-	        	System.out.println(conductores.getNode(i).getData().getNom()+" con "+conductores.getNode(i).getData().getCant_viajes()+" viajes");
+	        	System.out.println(topconductores.getNode(i).getData().getNom()+" con "+topconductores.getNode(i).getData().getCant_viajes()+" viajes");
 	        }   
 	        
 	        int distotal=dijkstra.DistanciaTotal(path, dijkstra);
