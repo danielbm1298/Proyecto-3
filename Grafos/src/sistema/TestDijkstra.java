@@ -201,6 +201,7 @@ public class TestDijkstra {
 	        topconductores=top5(conductores);
 	        
 	        //Lista Estudiantes
+		
 	        Estudiante Oscar=new Estudiante("Oscar", 201899546, nodes.getNode(28).getData());
 	        Estudiante Armando=new Estudiante("Armando", 201848763, nodes.getNode(27).getData());
 	        Estudiante Manuel=new Estudiante("Manuel", 201897894, nodes.getNode(17).getData());
@@ -226,8 +227,8 @@ public class TestDijkstra {
 		    
 	// AQUI SE PRUEBAN LAS 4 OPCIONES DE CARPOOLING
 		//Conductor ************************************************************
-	        //Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
-		//Linked_List<Vertice> path=sin_desv(Andrey,estudiantes, dijkstra);
+	        //Linked_List<Vertice> path=est_pasarp_amigo(conductor1, dijkstra);
+		//Linked_List<Vertice> path=sin_desv(conductor1,estudiantes, dijkstra);
 		//Estudiante**********************************************************
 		//Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
 		Linked_List<Vertice> path=est_pasarp_amigo(Andrey, dijkstra);
