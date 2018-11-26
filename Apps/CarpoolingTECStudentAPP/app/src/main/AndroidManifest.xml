@@ -54,7 +54,8 @@
         </activity>
         <activity android:name=".Tab1MapWest" />
         <activity android:name=".Tab2MapCentre" />
-        <activity android:name=".Tab3MapEast"></activity>
+        <activity android:name=".Tab3MapEast" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>

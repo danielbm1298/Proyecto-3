@@ -1,24 +1,388 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
+    android:id="@+id/rl"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TabbActivity$PlaceholderFragment">
 
-    <TextView
-        android:id="@+id/section_label"
+    <ProgressBar
+        android:id="@+id/_6_7"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="74dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/_6"
+        android:layout_alignStart="@+id/_1"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="-12dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        app:layout_constraintBottom_toTopOf="@+id/_1"
+        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintVertical_bias="0.625"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/_7_8"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="74dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/_6"
+        android:layout_alignStart="@+id/_1"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="65dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        app:layout_constraintBottom_toTopOf="@+id/_1"
+        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintVertical_bias="0.625"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/_8_9"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="74dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/_6"
+        android:layout_alignStart="@+id/_1"
+        android:layout_marginStart="243dp"
+        android:layout_marginTop="138dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        app:layout_constraintBottom_toTopOf="@+id/_1"
+        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintVertical_bias="0.625"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/_9_10"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="74dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/_6"
+        android:layout_alignStart="@+id/_1"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="212dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        app:layout_constraintBottom_toTopOf="@+id/_1"
+        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintVertical_bias="0.625"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/_10_11"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="74dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/_6"
+        android:layout_alignStart="@+id/_1"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="285dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        app:layout_constraintBottom_toTopOf="@+id/_1"
+        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintVertical_bias="0.625"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/_3_4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="79dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/_6"
+        android:layout_alignStart="@+id/_1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="265dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        app:layout_constraintBottom_toTopOf="@+id/_1"
+        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintVertical_bias="0.625"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/_2_3"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="79dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/_6"
+        android:layout_alignStart="@+id/_1"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="170dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        app:layout_constraintBottom_toTopOf="@+id/_1"
+        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintVertical_bias="0.625"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:text="tab2 mapcentre"/>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="271dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="ruinas"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="estadio"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_0"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="135dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="ice"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="mini super"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="106dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="Farmacia"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="43dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="banco"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="tribunales"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_0"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="sonny"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_0"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="imas"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="el carmen"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/com_facebook_tooltip_black_background"
+        android:text="mopt"
+        android:textColor="@color/com_facebook_button_background_color_focused"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/_13_18"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="168dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="-13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_toStartOf="@+id/_6"
+        android:layout_toEndOf="@+id/_0"
+        app:layout_constraintEnd_toStartOf="@+id/_6"
+        app:layout_constraintStart_toEndOf="@+id/_0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ProgressBar
+        android:id="@+id/_13_14"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="79dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/_6"
+        android:layout_alignStart="@+id/_1"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-13dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        app:layout_constraintBottom_toTopOf="@+id/_1"
+        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintVertical_bias="0.625"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/_14_15"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="79dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/_6"
+        android:layout_alignStart="@+id/_1"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="78dp"
+        android:progressDrawable="@drawable/progressbar_states"
+        app:layout_constraintBottom_toTopOf="@+id/_1"
+        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintVertical_bias="0.625"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ProgressBar
+        android:id="@+id/_14_19"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="163dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/_1"
+        android:layout_marginStart="-8dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="-8dp"
+        android:layout_toStartOf="@+id/_7"
+        android:layout_toEndOf="@+id/_1" />
+
+    <ProgressBar
+        android:id="@+id/_15_20"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/_2"
+        android:layout_marginStart="-13dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-20dp"
+        android:layout_toStartOf="@+id/_8"
+        android:layout_toEndOf="@+id/_2" />
+
+    <ProgressBar
+        android:id="@+id/_16_21"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="161dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/_2_3"
+        android:layout_marginStart="-15dp"
+        android:layout_marginEnd="-12dp"
+        android:layout_marginBottom="-12dp"
+        android:layout_toStartOf="@+id/_9"
+        android:layout_toEndOf="@+id/_3"
+        android:progressDrawable="@drawable/progressbar_states2" />
+
+    <ProgressBar
+        android:id="@+id/_16_22"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="161dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/_2_3"
+        android:layout_marginStart="-31dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-53dp"
+        android:layout_toStartOf="@+id/_9"
+        android:layout_toEndOf="@+id/_3"
+        android:progressDrawable="@drawable/progressbar_states3" />
+
+    <ProgressBar
+        android:id="@+id/_17_23"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="161dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/_3_4"
+        android:layout_marginStart="-12dp"
+        android:layout_marginTop="-9dp"
+        android:layout_marginEnd="-14dp"
+        android:layout_toStartOf="@+id/_11"
+        android:layout_toEndOf="@+id/_4" />
+
+</RelativeLayout>
