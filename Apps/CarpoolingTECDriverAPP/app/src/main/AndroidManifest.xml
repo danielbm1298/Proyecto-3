@@ -19,7 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".RegisterActivity" />
+        <activity
+            android:name=".TabbActivity"
+            android:label="@string/title_activity_tabb"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Tab1MapWest" />
+        <activity android:name=".Tab2MapCentre" />
+        <activity android:name=".Tab3MapEast" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>

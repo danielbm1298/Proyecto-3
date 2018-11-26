@@ -1,4 +1,4 @@
-package com.yenus210.carpoolingtecstudentapp;
+package com.yenus210.carpoolingtecdriverapp;
 
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -22,23 +22,23 @@ public class Tab1MapWest extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tab1, container, false);
 
-        _0 = (Button) rootView.findViewById(R.id._13);
+        _0 = (Button) rootView.findViewById(R.id._0);
         _0_1= (ProgressBar) rootView.findViewById(R.id._0_1);
-        _1 = (Button) rootView.findViewById(R.id._14);
+        _1 = (Button) rootView.findViewById(R.id._1);
         _1_2= (ProgressBar) rootView.findViewById(R.id._1_2);
-        _2 = (Button) rootView.findViewById(R.id._15);
-        _2_3= (ProgressBar) rootView.findViewById(R.id._15_16);
-        _3 = (Button) rootView.findViewById(R.id._16);
-        _3_4= (ProgressBar) rootView.findViewById(R.id._16_17);
-        _4 = (Button) rootView.findViewById(R.id._17);
+        _2 = (Button) rootView.findViewById(R.id._2);
+        _2_3= (ProgressBar) rootView.findViewById(R.id._2_3);
+        _3 = (Button) rootView.findViewById(R.id._3);
+        _3_4= (ProgressBar) rootView.findViewById(R.id._3_4);
+        _4 = (Button) rootView.findViewById(R.id._4);
         _4_5= (ProgressBar) rootView.findViewById(R.id._4_5);
         _5= (Button) rootView.findViewById(R.id._5);
         _5_12= (ProgressBar) rootView.findViewById(R.id._5_11);
         _5_12= (ProgressBar) rootView.findViewById(R.id._5_12);
-        _6 = (Button) rootView.findViewById(R.id._24);
+        _6 = (Button) rootView.findViewById(R.id._6);
         _6_7= (ProgressBar) rootView.findViewById(R.id._6_7);
-        _7 = (Button) rootView.findViewById(R.id._19);
-        _7_8= (ProgressBar) rootView.findViewById(R.id._24_25);
+        _7 = (Button) rootView.findViewById(R.id._7);
+        _7_8= (ProgressBar) rootView.findViewById(R.id._7_8);
 
 
         Button [] buttonL = {_0,_1,_2,_3,_4,_5,_6,_7,_8,_9,_10,_11,_12};

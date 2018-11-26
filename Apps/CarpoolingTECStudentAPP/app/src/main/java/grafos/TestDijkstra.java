@@ -1,4 +1,4 @@
-package sistema;
+package grafos;
 import java.util.Random;
 public class TestDijkstra {
 	

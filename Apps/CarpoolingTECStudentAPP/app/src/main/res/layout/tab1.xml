@@ -13,28 +13,28 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="74dp"
         android:layout_height="51dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="233dp"
         android:layout_marginTop="-12dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
     <ProgressBar
-        android:id="@+id/_7_8"
+        android:id="@+id/_24_25"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="74dp"
         android:layout_height="51dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="243dp"
         android:layout_marginTop="65dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -43,13 +43,13 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="74dp"
         android:layout_height="51dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="243dp"
         android:layout_marginTop="138dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -58,28 +58,28 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="74dp"
         android:layout_height="51dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="240dp"
         android:layout_marginTop="212dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
     <ProgressBar
-        android:id="@+id/_10_11"
+        android:id="@+id/_27_28"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="74dp"
         android:layout_height="51dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="256dp"
         android:layout_marginTop="285dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -88,13 +88,13 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="74dp"
         android:layout_height="51dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="248dp"
         android:layout_marginTop="364dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -102,7 +102,7 @@
         android:id="@+id/_12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/_0"
+        android:layout_below="@+id/_13"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="408dp"
         android:layout_marginEnd="42dp"
@@ -118,43 +118,43 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="79dp"
         android:layout_height="66dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="9dp"
         android:layout_marginTop="354dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
     <ProgressBar
-        android:id="@+id/_3_4"
+        android:id="@+id/_16_17"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="79dp"
         android:layout_height="66dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="15dp"
         android:layout_marginTop="265dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
     <ProgressBar
-        android:id="@+id/_2_3"
+        android:id="@+id/_15_16"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="79dp"
         android:layout_height="66dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="1dp"
         android:layout_marginTop="170dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -174,7 +174,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_3"
+        android:id="@+id/_16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -189,7 +189,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_4"
+        android:id="@+id/_17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -204,10 +204,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_2"
+        android:id="@+id/_15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/_0"
+        android:layout_below="@+id/_13"
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="135dp"
@@ -219,10 +219,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_7"
+        android:id="@+id/_19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/_0"
+        android:layout_below="@+id/_13"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="34dp"
         android:layout_marginEnd="51dp"
@@ -234,10 +234,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_8"
+        android:id="@+id/_25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/_0"
+        android:layout_below="@+id/_13"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="106dp"
         android:layout_marginEnd="52dp"
@@ -249,10 +249,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_9"
+        android:id="@+id/_26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/_0"
+        android:layout_below="@+id/_13"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="182dp"
         android:layout_marginEnd="43dp"
@@ -267,7 +267,7 @@
         android:id="@+id/_10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/_0"
+        android:layout_below="@+id/_13"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="258dp"
         android:layout_marginEnd="45dp"
@@ -279,10 +279,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_11"
+        android:id="@+id/_28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/_0"
+        android:layout_below="@+id/_13"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="330dp"
         android:layout_marginEnd="48dp"
@@ -294,10 +294,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_1"
+        android:id="@+id/_14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/_0"
+        android:layout_below="@+id/_13"
         android:layout_alignParentStart="true"
         android:layout_marginStart="9dp"
         android:layout_marginTop="42dp"
@@ -309,7 +309,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_6"
+        android:id="@+id/_24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -324,7 +324,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/_0"
+        android:id="@+id/_13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -346,10 +346,10 @@
         android:layout_marginStart="-13dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="-10dp"
-        android:layout_toStartOf="@+id/_6"
-        android:layout_toEndOf="@+id/_0"
-        app:layout_constraintEnd_toStartOf="@+id/_6"
-        app:layout_constraintStart_toEndOf="@+id/_0"
+        android:layout_toStartOf="@+id/_24"
+        android:layout_toEndOf="@+id/_13"
+        app:layout_constraintEnd_toStartOf="@+id/_24"
+        app:layout_constraintStart_toEndOf="@+id/_13"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -358,13 +358,13 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="79dp"
         android:layout_height="66dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="-2dp"
         android:layout_marginTop="-13dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -373,13 +373,13 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="79dp"
         android:layout_height="66dp"
-        android:layout_below="@+id/_6"
-        android:layout_alignStart="@+id/_1"
+        android:layout_below="@+id/_24"
+        android:layout_alignStart="@+id/_14"
         android:layout_marginStart="8dp"
         android:layout_marginTop="78dp"
         android:progressDrawable="@drawable/progressbar_states"
-        app:layout_constraintBottom_toTopOf="@+id/_1"
-        app:layout_constraintTop_toBottomOf="@+id/_0"
+        app:layout_constraintBottom_toTopOf="@+id/_14"
+        app:layout_constraintTop_toBottomOf="@+id/_13"
         app:layout_constraintVertical_bias="0.625"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -388,36 +388,36 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="163dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/_1"
+        android:layout_alignTop="@+id/_14"
         android:layout_marginStart="-8dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="-8dp"
-        android:layout_toStartOf="@+id/_7"
-        android:layout_toEndOf="@+id/_1" />
+        android:layout_toStartOf="@+id/_19"
+        android:layout_toEndOf="@+id/_14" />
 
     <ProgressBar
         android:id="@+id/_2_8"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="173dp"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/_2"
+        android:layout_alignTop="@+id/_15"
         android:layout_marginStart="-13dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="-20dp"
-        android:layout_toStartOf="@+id/_8"
-        android:layout_toEndOf="@+id/_2" />
+        android:layout_toStartOf="@+id/_25"
+        android:layout_toEndOf="@+id/_15" />
 
     <ProgressBar
         android:id="@+id/_3_9"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="161dp"
         android:layout_height="48dp"
-        android:layout_alignBottom="@+id/_2_3"
+        android:layout_alignBottom="@+id/_15_16"
         android:layout_marginStart="-15dp"
         android:layout_marginEnd="-12dp"
         android:layout_marginBottom="-12dp"
-        android:layout_toStartOf="@+id/_9"
-        android:layout_toEndOf="@+id/_3"
+        android:layout_toStartOf="@+id/_26"
+        android:layout_toEndOf="@+id/_16"
         android:progressDrawable="@drawable/progressbar_states2" />
 
     <ProgressBar
@@ -425,12 +425,12 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="161dp"
         android:layout_height="48dp"
-        android:layout_alignBottom="@+id/_2_3"
+        android:layout_alignBottom="@+id/_15_16"
         android:layout_marginStart="-31dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="-53dp"
-        android:layout_toStartOf="@+id/_9"
-        android:layout_toEndOf="@+id/_3"
+        android:layout_toStartOf="@+id/_26"
+        android:layout_toEndOf="@+id/_16"
         android:progressDrawable="@drawable/progressbar_states3" />
 
     <ProgressBar
@@ -438,12 +438,12 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="161dp"
         android:layout_height="37dp"
-        android:layout_below="@+id/_3_4"
+        android:layout_below="@+id/_16_17"
         android:layout_marginStart="-12dp"
         android:layout_marginTop="-9dp"
         android:layout_marginEnd="-14dp"
-        android:layout_toStartOf="@+id/_11"
-        android:layout_toEndOf="@+id/_4" />
+        android:layout_toStartOf="@+id/_28"
+        android:layout_toEndOf="@+id/_17" />
 
     <ProgressBar
         android:id="@+id/_5_12"
@@ -465,7 +465,7 @@
         android:layout_marginStart="-42dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="-40dp"
-        android:layout_toStartOf="@+id/_11"
+        android:layout_toStartOf="@+id/_28"
         android:layout_toEndOf="@+id/_5"
         android:progressDrawable="@drawable/progressbar_states4" />
 

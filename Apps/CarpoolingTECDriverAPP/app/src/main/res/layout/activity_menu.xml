@@ -10,22 +10,33 @@
         android:id="@+id/califp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calificación Promedio"
-        app:layout_constraintBottom_toTopOf="@+id/mamigos"
+        android:text="calificación Promedio"
+        app:layout_constraintBottom_toTopOf="@+id/ramist"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/mamigos"
+        android:id="@+id/ramist"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="mostrar amigos "
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Relaciones de Amistad"
+        app:layout_constraintBottom_toTopOf="@+id/aamigos"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/califp" />
+
+    <Button
+        android:id="@+id/aamigos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar amigos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ramist" />
 
 </android.support.constraint.ConstraintLayout>
